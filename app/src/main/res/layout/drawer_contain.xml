@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:onClick="drawerLayoutClick"
+    android:background="@android:color/white"
+    android:id="@+id/linearLayout_drawer_contain"
+    >
+
+    <LinearLayout
+        android:id="@+id/drawer_top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:onClick="drawerMenu"
+            android:src="@mipmap/searchbackbtn"/>
+
+        <TextView
+            android:id="@+id/chabaike"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="@string/app_name"
+            />
+
+        <ImageView
+            android:id="@+id/righttopbutton"
+            android:onClick="drawerMenu"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/righttopbutton"
+            />
+
+    </LinearLayout>
+    <View
+        android:background="#008000"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="关键字"
+
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+
+                android:drawableLeft="@mipmap/searchico"/>
+            <ImageView
+                android:id="@+id/gosearch"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:onClick="drawerMenu"
+                android:src="@mipmap/gosearch"/>
+        </LinearLayout>
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门搜索：茶"/>
+        <TextView
+            android:text="    收藏夹"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/guanyu"/>
+        <TextView
+            android:id="@+id/myColection"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="drawerMenu"
+            android:text="我的收藏"/>
+        <TextView
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/shoucangjia"
+            android:text="  关于"/>
+        <TextView
+            android:id="@+id/copyright"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:onClick="drawerMenu"
+            android:text="版权信息"/>
+        <TextView
+            android:id="@+id/feedback"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:onClick="drawerMenu"
+            android:text="意见反馈"/>
+    </LinearLayout>
+
+
+</LinearLayout>

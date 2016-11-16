@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.qgz.qinsa.cbk.ui.DetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:background="@android:color/holo_blue_light"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+        <TextView
+            android:id="@+id/title_details"
+            android:text="标题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <WebView
+        android:layout_below="@id/layout_top"
+        android:id="@+id/webView_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/bottom_buttons"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/contentback"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="detailButtons"
+            android:src="@mipmap/contentback"/>
+        <ImageView
+            android:id="@+id/contentshare"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="detailButtons"
+            android:src="@mipmap/contentshare"/>
+        <ImageView
+            android:id="@+id/collectcontent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="detailButtons"
+            android:src="@mipmap/collectcontent"/>
+    </LinearLayout>
+
+</RelativeLayout>

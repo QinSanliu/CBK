@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CBK</string>
+
+    <string-array name="tabTitles">
+        <item>头条</item>
+        <item>百科</item>
+        <item>资讯</item>
+        <item>经营</item>
+        <item>数据</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_details">DetailsActivity</string>
+
+</resources>
